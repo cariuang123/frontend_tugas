@@ -56,13 +56,14 @@ function HomePage() {
 
   return (
     <div className="container">
-      <h1>Realtime Fetching From Firebase Databases</h1>
+      <h1>Nama : Bambang Permadi</h1>
+      <h1>Npm : 5220411425</h1>
       <table>
         <thead>
           <tr>
-            <th>Name</th>
+            <th>Nama</th>
             <th>Email</th>
-            <th>Message</th>
+            <th>pesan</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -92,7 +93,7 @@ function HomePage() {
           <button onClick={closeSlideBox}>Close</button>
         </div>
         <h2>Update Data</h2>
-        <label>Name: </label>
+        <label>Nama: </label>
         <input
           type="text"
           value={updateData.name}
@@ -108,7 +109,7 @@ function HomePage() {
           placeholder="Enter email"
         />
         <br /><br />
-        <label>Message: </label>
+        <label>pesan: </label>
         <textarea
           value={updateData.message}
           onChange={(e) => setUpdateData({ ...updateData, message: e.target.value })}
