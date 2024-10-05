@@ -42,25 +42,25 @@ function App() {
     <div className="container">
       <h1>Buat Data Baru</h1>
       <div className="form">
-        <label>Name</label>
+        <label>Nama</label>
         <input 
           type="text" 
           value={name} 
           onChange={(e) => setName(e.target.value)} 
-          placeholder="Enter your name" 
+          placeholder="masukan namamu" 
         />
         <label>Email</label>
         <input 
           type="email" 
           value={email} 
           onChange={(e) => setEmail(e.target.value)} 
-          placeholder="Enter your email" 
+          placeholder="masukan emailmu" 
         />
-        <label>Message</label>
+        <label>pesan</label>
         <textarea 
           value={message} 
           onChange={(e) => setMessage(e.target.value)} 
-          placeholder="Enter your message" 
+          placeholder="masukan pesan" 
         />
         <button onClick={sendData}>Submit</button>
       </div>
